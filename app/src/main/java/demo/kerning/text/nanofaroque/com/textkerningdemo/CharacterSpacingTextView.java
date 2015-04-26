@@ -55,8 +55,8 @@ public class CharacterSpacingTextView extends TextView {
         StringBuilder builder = new StringBuilder();
         for(int i = 0; i < originalText.length(); i++) {
             String c = ""+ originalText.charAt(i);
-           // builder.append(c.toLowerCase());
-            //builder.append(c.toUpperCase());
+           // builder.append(c.toLowerCase());//all the character become lowercase
+            //builder.append(c.toUpperCase());//all the character become uppercase
             builder.append(c);
             if(i+1 < originalText.length()) {
                 builder.append("\u00A0");
